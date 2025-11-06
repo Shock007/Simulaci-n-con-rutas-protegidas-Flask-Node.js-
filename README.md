@@ -171,6 +171,7 @@ TOKEN_DAN=$(curl -s -X POST http://localhost:5000/login -H "Content-Type: applic
 curl -s http://localhost:3000/admin/only -H "Authorization: Bearer $TOKEN_DAN" | jq
 </pre>
 # Prueba revocación (logout)
+Delante de Bearer pega el token de Alice.
 <pre>
 curl -v -X POST http://localhost:5000/logout -H "Authorization: Bearer <tu_token_aqui>"
 </pre>
